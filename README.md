@@ -227,8 +227,8 @@ class TinifyImageJob implements ShouldQueue
 ```
 
 ```php
-# QUEUE_CONNECTION=database
-QUEUE_CONNECTION=sync
+# QUEUE_CONNECTION=sync
+QUEUE_CONNECTION=database
 ```
 
 ```shell
@@ -238,6 +238,8 @@ php artisan queue:work
 
 
 ```php
+// config/backpack/crud.php
+
 // 'uploaders' => [
 //     'withFiles' => [
 //         'image'           => \Backpack\CRUD\app\Library\Uploaders\SingleBase64Image::class,
